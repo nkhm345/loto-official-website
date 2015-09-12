@@ -1,6 +1,13 @@
 <?php
-require_once "pdo.php";
-session_start();
+$db = new mysqli('localhost', 'root', 'root', 'loto');
+
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
+} 
+
+$sql = "INSERT INTO my_DB (Username, Name, ID) VALUES ('John', 'Doe', '123')";
+
+$db->close();
 ?>
 <!DOCTYPE html>
 <html>
