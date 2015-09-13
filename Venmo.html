@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<title>Venmo ~ Authorize an Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://d1sdo9m3ixryu9.cloudfront.net/api/static/css/oauth-9e43931f0f5c32f4d8ec2ffde3ab1a14.css" />
+<script type="application/x-javascript">
+if (navigator.userAgent.indexOf('iPhone') != -1) {
+addEventListener("load", function() {
+setTimeout(hideURLbar, 0);
+}, false);
+}
+function hideURLbar() {
+window.scrollTo(0, 1);
+}
+</script>
+</head>
+<body >
+<div id="background"></div>
+<div id="oauth" class="developer_api">
+<!-- HEADER BEGIN -->
+<div id="header">
+<img src="https://d1sdo9m3ixryu9.cloudfront.net/api/static/images/venmo-logo-medium-6-bd75443e979a541fea387bc6040e0af1.png" alt="Venmo"/>
+</div>
+<!-- HEADER END -->
+<!-- BODY BEGIN -->
+<div id="body" class="developer_api">
+
+<div class="app_description">
+<img src='https://venmopics.appspot.com/c_2899/m' />
+<div id="permission">
+<div>Let <b style="color:#424242">Developer Settings </b></div>
+make payments on Venmo.
+</div>
+</div>
+<div id="login_prompt">Log in with your Venmo credentials</div>
+<!-- FORM BEGIN -->
+<form action="https://api.venmo.com/v1/oauth/authorize" method="POST" ><input type="hidden" name="csrftoken2" value="d5fd31ac9db94c7d9b118a1fd647f1b7"/>
+<input type="hidden" name="auth_request" value="55f4c472df1a7a0d9c615da6"/>
+<input type="hidden" name="web_redirect_url" value="https://www.google.com"/>
+<input placeholder="email, phone, or username" type="text" name="username" autocorrect="off" autocapitalize="off"/>
+<input type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="off" />
+<div id="submit" class="">
+<button type='submit' class="grant" name="grant" value="1">Allow</button>
+<button type='submit' class="deny" name="deny" value="1">Deny</button>
+</div>
+</form>
+<p class="signup">
+<a href="https://venmo.com/w/signup" id="signup-link">Sign up with Venmo</a>
+</p>
+<!-- FORM END -->
+</div>
+<!-- BODY END -->
+</div>
+<script>
+var signupLink = document.getElementById('signup-link');
+signupLink.href += "?from=oauth&" + document.location.search.slice(1);
+</script>
+</body>
+</html>

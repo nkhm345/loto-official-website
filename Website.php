@@ -13,7 +13,7 @@ $db->close();
 <html>
   <head>
     <title>
-      Test
+      Home
     </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,8 @@ $db->close();
     <div class="message">
       <div class="container">
         <h1 id="title">loto</h1>
+        <!---<p id="description">1&cent; to play.</p>-->
+        <button id="play" onclick="window.location.href='Venmo.html'">Play!</button>
       </div>
     </div>
 
