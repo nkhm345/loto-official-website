@@ -19,9 +19,25 @@ session_start();
   <body>
     <div class="message">
       <div class="container">
+
         <h1 id="title">loto</h1>
-        <!---<p id="description">1&cent; to play.</p>-->
-        <button id="play" onclick="window.location.href='Venmo.html'">Play!</button>
+
+        <br>
+
+        <p id="description">Give a little. Get a lot.</p>
+
+        <p id="description1">Enter just a penny for the chance to win big!</p>
+
+        <br>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+          </div>
+        </div>
+        <div id="progress_label">
+          0&cent;
+        </div>
+        <button id="play" onclick="window.location.href='Venmo.html'">Play with <img src="venmo_logo.png" alt="Logo" width="50"></button>
       </div>
     </div>
 

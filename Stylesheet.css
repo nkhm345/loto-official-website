@@ -21,10 +21,31 @@
   color: black;
 }
 
+#description1 {
+  font-size: 20px;
+  color: gray;
+}
+
+#penny {
+  margin-bottom: -20px;
+}
+
+.progress {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#progress_label {
+  font-size: 15px;
+  margin-top: -10px;
+}
+
 #play {
-  width: 100px;
+  width: 200px;
   position: relative;
   font-size: 20px;
+  margin-top: 20px;
   color: white;
   background-color: #9CE62A;
   border: none;
